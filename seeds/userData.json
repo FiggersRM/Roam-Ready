@@ -1,0 +1,27 @@
+[
+    {
+        "username": "FiggersM",
+        "email": "MitchFiggers@gmail.com",
+        "password": "password123"
+    },
+    {
+        "username": "FominV",
+        "email": "vita.bukhalo@gmail.com",
+        "password": "password456"
+    },
+    {
+        "username": "SowM",
+        "email": "yerimsw@gmail.com",
+        "pasword": "password789"
+    },
+    {
+        "username": "HowardM",
+        "email": "morganhoward1996@gmail.com",
+        "password": "ppassword123"
+    },
+    {
+        "username": "HutchinsonB",
+        "email": "Brandonconnerhutchinson@gmail.com",
+        "password": "ppassword456"
+    }
+]
