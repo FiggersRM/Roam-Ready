@@ -8,6 +8,7 @@ Itinerary.belongsTo(User, {
 
 Itinerary.hasMany(Comment, {
     foreignKey: "comment_id",
+    onDelete: "CASCADE"
 });
 
 Comment.belongsTo(User, {
