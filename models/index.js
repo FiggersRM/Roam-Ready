@@ -2,6 +2,10 @@ const User = require("./User");
 const Itinerary = require("./Itinerary");
 const Comment = require("./Comment");
 
+User.hasMany(Itinerary, {
+    foreignKey: 'user_id'
+})
+
 Itinerary.belongsTo(User, {
     foreignKey: "user_id",
 });
