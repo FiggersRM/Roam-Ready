@@ -1,5 +1,5 @@
 const sequelize = require('../config/connection');
-const { User, Itineraries, Comments } = require('../models');
+const { User, Itinerary, Comment } = require('../models');
 
 const userData = require('./userData.json');
 const itinData = require('./itineraryData.json');
@@ -13,12 +13,12 @@ const seedDatabase = async ()  => {
         returning: true,
     });
 
-    const itineraries = await Itineraries.bulkCreate(itinData, {
+    const itineraries = await Itinerary.bulkCreate(itinData, {
         individualHooks: true,
         returning: true,
     });
 
-    const comments = await Comments.bulkCreate(commentData, {
+    const comments = await Comment.bulkCreate(commentData, {
         individualHooks: true,
         returning: true,
     });
