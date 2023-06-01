@@ -6,7 +6,7 @@ router.post("/", withAuth, async (req, res) => {
     try {
         const newItinerary = await Itinerary.create({ 
             ...req.body,
-            user_id: req.seesion.user_id,
+            user_id: req.session.user_id,
         });
         res.status(200).json(newItinerary);
     }
