@@ -1,0 +1,47 @@
+ <div class="row">
+        <div class="col-auto">
+          <h2 class="username">Welcome, {{name}}!</h2>
+        </div>
+      </div>
+    <div class="columns">
+      <div class="row mt-4 itinForm column is-half">
+        <div class="col-md-6" >
+          <h3 class="createForm">Create a New Itinerary:</h3>
+      
+          <form class="form new-itinerary-form">
+            <div class="form-group name">
+              <label for="itinerary-name">Itinerary Name:</label>
+              <input class="form-input" type="text" id="itinerary-name" name="itinerary-name" />
+            </div>
+            <div class="form-group desc">
+              <label for="itinerary-desc">description:</label>
+              <textarea class="form-input" id="itinerary-desc" name="itinerary-desc"></textarea>
+            </div>
+            <div class="createItin-btn" class="form-group">
+              <button type="submit" class="button is-rounded is-dark btn btn-primary">Create!</button>
+            </div>
+          </form>
+        </div>
+      </div>
+
+      <div class="column is-half itineraries">
+        {{#if itineraries.length}}
+        <div class="col-md-6 itinerary-list">
+          <h3 class="myItin">My Itineraries:</h3>
+      
+          {{#each itineraries as |itinerary|}}
+          <div class="row mb-2">
+            <div class="col-md-8">
+              <h4><a href="/itinerary/{{itinerary.id}}">{{itinerary.name}}</a></h4>
+            </div>
+          </div>
+          {{/each}}
+        </div>
+        {{/if}}
+        <div class="col-md-4">
+            <button class=" button is-rounded is-info is focused btn create-btn">Create Itinerary</button>
+        </div>
+    
+        </div>
+      </div>
+    </div>

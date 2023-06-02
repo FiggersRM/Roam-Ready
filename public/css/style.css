@@ -2,4 +2,47 @@ body {
     margin: 0% 2%;
     background: #00bfff;
   }
+
+  body {
+    display: flex;
+    flex-direction: column;
+
+}
+.createForm {
+    font-size: larger; 
+}
+
+.itinForm {
+    color: black;
+    margin-left: 15px;
+}
+
+.username {
+    font-size: 30px;
+    color: black;
+    margin-left: 10px;
+}
+
+.name{
+    display: flex;
+    flex-direction: column;
+    padding: 5px;
+    width: 400px;
+}
+.desc{
+    display: flex;
+    flex-direction: column;
+    padding: 5px;
+    width: 400px;
+    height: 80px;
+}
+
+.btn-primary{
+    color: blue;
+    background-color: black;
+}
+
+.create-btn {
+    margin-top: 50px;
+}
   
