@@ -7,7 +7,8 @@ var airportName = prompt('Please enter the airport name:');
 const url = `https://api.api-ninjas.com/v1/airports?name=${airportName}`;
 const apiKey = 'VT9HqL9lI8jssWnFpkZmzg==9RCLPnNkULlRghIa';
 
-fetch(url, {
+const fetchAirports = () => {
+  fetch(url, {
   headers: {
     'X-Api-Key': apiKey,
     'Content-Type': 'application/json'
@@ -25,5 +26,8 @@ fetch(url, {
   .catch(error => {
     console.error('Error:', error);
   });
+}
 
-
+const fetchItins = () => {
+  
+}
