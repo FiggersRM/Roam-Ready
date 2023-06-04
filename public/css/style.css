@@ -1,11 +1,13 @@
 body {
     margin: 0% 2%;
     background: #00bfff;
+    color: black;
   }
 
   body {
     display: flex;
     flex-direction: column;
+    color: black;
 
 }
 .createForm {
@@ -60,22 +62,26 @@ body {
 .login {
     margin-top: 50px;
     font-size: large;
+    color: black;
 }
 
 .signup {
     margin-top: 50px;
     margin-left: 100px;
     padding: 50px;
+    color: black;
 }
 
 .email {
     padding: 10px;
     font-size: larger;
+    color: black;
 }
 
 .password {
     padding: 10px;
     font-size: larger;
+    color: black;
 }
 
 .loginbtn {
@@ -85,16 +91,19 @@ body {
 .username {
     padding: 10px;
     font-size: larger;
+    color: black;
 }
 
 .email-sign {
     padding: 10px;
     font-size: larger;
+    color: black;
 }
 
 .password-signup {
     padding: 10px;
     font-size: larger;
+    color: black;
 }
 
 .signup-btn {
