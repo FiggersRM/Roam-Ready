@@ -1,0 +1,8 @@
+<div class="columns is-flex is-flex-wrap-wrap is-justify-content-space-between">
+  <h3 class="column is-full has-text-centered is-size-3">Itineraries</h3>
+  <div id="cardCont" class="column is-full is-flex is-flex-wrap-wrap is-flex-direction-row is-justify-content-space-evenly">
+      {{#each itineraries as |itinerary|}}
+      {{> itinerary-details}}
+      {{/each}}
+  </div>
+</div>
