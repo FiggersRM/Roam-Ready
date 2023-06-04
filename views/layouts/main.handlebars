@@ -13,18 +13,18 @@
   <body>
     <header>
       <div class="column is-full py-5">
-        <h1 class="is-size-1 has-text-centered">Roam Ready</h1>
+        <h1 class="is-size-1 has-text-centered has-text-black">Roam Ready</h1>
       </div>
       <nav class="">
-        <a href="/" class="mx-4">Home</a>
-        <a href="<!--Add Itineraries link-->" class="mx-4"
+        <a href="/" class="mx-4 has-text-black">Home</a>
+        <a href="<!--Add Itineraries link-->" class="mx-4 has-text-black"
           >Public Itineraries</a
         >
         {{#if logged_in}}
-        <a href="/dashboard">My Dashboard</a>
-        <a id="logout">Logout</a>
+        <a href="/dashboard" class="has-text-black">My Dashboard</a>
+        <a id="logout" class="has-text-black">Logout</a>
         {{else}}
-        <a href="/login">Login</a>
+        <a href="/login" class=" mx-4 has-text-black">Login</a>
         {{/if}}
       </nav>
     </header>
