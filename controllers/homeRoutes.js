@@ -28,18 +28,24 @@ router.get('/', async (req, res) => {
 
 router.get('/dashboard', withAuth, async (req, res) => {
     try {
-        const userData = await User.findByPk(req.session.user_id, {
-            attributes: { exclude: ['password'] },
-            include: [{ model: Itinerary }],
+        const userData = await User.findOne({ 
+          where: {
+            id: req.session.user_id
+          },
+          include: [{ model: Itinerary }],
+          attributes: { exclude: ['password'] },
         });
+        console.log("MY USER",userData)
 
         const user = userData.get({ plain: true });
+        const itineraries = user.itineraries
 
         res.render('dashboard', {
-            ...user,
-            logged_in: true
+            itineraries,
+            // logged_in: true
         });
     } catch (err) {
+      console.log("error", err)
         res.status(500).json(err);
     }
 });
