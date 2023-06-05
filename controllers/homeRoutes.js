@@ -39,10 +39,11 @@ router.get('/dashboard', withAuth, async (req, res) => {
 
         const user = userData.get({ plain: true });
         const itineraries = user.itineraries
+        console.log(itineraries)
 
         res.render('dashboard', {
             itineraries,
-            // logged_in: true
+            logged_in: req.session.logged_in
         });
     } catch (err) {
       console.log("error", err)
