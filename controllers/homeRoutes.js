@@ -59,4 +59,27 @@ router.get('/login', async (req, res) => {
     res.render('login');
 });
 
+router.get('/itinerary/:id', withAuth, async (req, res) => {
+  try {
+    const itinData = await Itinerary.findByPk(req.params.id, {
+      include: [
+        { 
+          model:Comment,
+          attributes: ['description', 'user_id'] }],
+    });
+    console.log("database reached");
+    const itin = itinData.get({ plain:true });
+    const comments = itin.comments;
+    console.log(itin);
+    console.log(comments);
+
+    res.render('itinerary', {
+      ...itin,
+      ...comments
+    });
+  } catch (err) {
+    res.status(500).json(err);
+  }
+})
+
 module.exports = router;
