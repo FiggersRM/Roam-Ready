@@ -66,11 +66,9 @@ router.get('/itinerary/:id', withAuth, async (req, res) => {
       include: [
         { 
           model:Comment,
-          attributes: ['description', 'user_id', 'itinerary_id'] }],
+          attributes: ['description', 'user_id', 'itinerary_id', 'name'] 
+        }],
     });
-    const allItins = await Itinerary.findAll({});
-    const itins = allItins.map((itinerary) => itinerary.get({ plain:true }));
-    console.log(itins);
     console.log("database reached");
     const itin = itinData.get({ plain:true });
     console.log(itin);
