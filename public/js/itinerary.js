@@ -23,7 +23,22 @@ const addComment = async (event) => {
 const postComment = async (event) => {
     const itinurl = window.location.pathname
     const itinArr = itinurl.split('/');
-    const itinId = itinArr[2];
-    console.log(itinId);
+    const itinerary_id = itinArr[2];
+    console.log(itinerary_id);
+    const description = textArea.value;
+    console.log(description);
+    if (description && itinerary_id) {
+        const response = await fetch('/api/comments', {
+            method: "POST",
+            body: JSON.stringify({ description, itinerary_id }),
+            headers: { 'Content-Type': 'application/json' }
+        });
+
+        if(response.ok) {
+            document.location.replace('/itinerary/' + itinerary_id);
+        } else {
+            alert("Failed to add comment");
+        }
+    }
 }
 commentBtn.addEventListener('click', addComment);
