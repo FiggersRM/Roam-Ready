@@ -2,51 +2,61 @@
     {
         "description": "OH EM GEEE! I want to go to California so bad! It looks like you had a great time!",
         "user_id": 2,
-        "itinerary_id": 1
+        "itinerary_id": 1,
+        "name": "FominV"
     },
     {
         "description": "I used to live in LA. Cool place.",
         "user_id": 4,
-        "itinerary_id": 1
+        "itinerary_id": 1,
+        "name": "HowardM"
     },
     {
         "description": "How was Spain? I love the architecture there, it looks so cool in the photos!",
         "user_id": 1,
-        "itinerary_id": 2
+        "itinerary_id": 2,
+        "name": "FiggersM"
     },
     {
         "description": "Ireland is so beautiful. Loved the pics.",
         "user_id": 3,
-        "itinerary_id": 2
+        "itinerary_id": 2,
+        "name": "SowM"
     },
     {
         "description": "I love going to DC but hate the traffic.",
         "user_id": 5,
-        "itinerary_id": 3
+        "itinerary_id": 3,
+        "name": "HutchinsonB"
     },
     {
         "description": "I love Nats park, too bad the team stinks :(.",
         "user_id": 2,
-        "itinerary_id": 3
+        "itinerary_id": 3,
+        "name": "FominV"
     },
     {
         "description": "My sister got arrested in Mexico lol. Needless to say she doesn't like to tlak about it.",
         "user_id": 1,
-        "itinerary_id": 4
+        "itinerary_id": 4,
+        "name": "FiggersM"
     },
     {
         "description": "I stayed at the same resort, I had such a good time.",
         "user_id": 5,
-        "itinerary_id": 4
+        "itinerary_id": 4,
+        "name": "HutchinsonB"
     },
     {
         "description": "Dubai looks so cool, just a little out of my price range for now.",
         "user_id": 4,
-        "itinerary_id": 5
+        "itinerary_id": 5,
+        "name": "HowardM"
     },
     {
         "description": "The Burj Khlalifa is incredible. Some great restaurants around there too.",
         "user_id": 3,
-        "itinerary_id": 5
+        "itinerary_id": 5,
+        "name": "SowM"
     }
 ]
