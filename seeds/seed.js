@@ -8,20 +8,17 @@ const commentData = require('./commentData');
 const seedDatabase = async ()  => {
     await sequelize.sync({force: true});
 
-    const users = await User.bulkCreate(userData, {
-        individualHooks: true,
-        returning: true,
-    });
+    for(let i=0; i < userData.length; i++) {
+        await User.create(userData[i]);
+    }
 
-    const itineraries = await Itinerary.bulkCreate(itinData, {
-        individualHooks: true,
-        returning: true,
-    });
+    for(let i=0; i < itinData.length; i++) {
+        await Itinerary.create(itinData[i]);
+    }
 
-    const comments = await Comment.bulkCreate(commentData, {
-        individualHooks: true,
-        returning: true,
-    });
+    for(let i=0; i < commentData.length; i++) {
+        await Comment.create(commentData[i]);
+    }
 
     process.exit(0);
 };

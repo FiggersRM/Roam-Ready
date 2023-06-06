@@ -1,5 +1,5 @@
 const router = require('express').Router();
-const { User, Itinerary } = require('../models');
+const { User, Itinerary, Comment } = require('../models');
 const withAuth = require('../utils/auth');
 
 router.get('/', async (req, res) => {
@@ -66,17 +66,18 @@ router.get('/itinerary/:id', withAuth, async (req, res) => {
       include: [
         { 
           model:Comment,
-          attributes: ['description', 'user_id'] }],
+          attributes: ['description', 'user_id', 'itinerary_id'] }],
     });
+    const allItins = await Itinerary.findAll({});
+    const itins = allItins.map((itinerary) => itinerary.get({ plain:true }));
+    console.log(itins);
     console.log("database reached");
     const itin = itinData.get({ plain:true });
-    const comments = itin.comments;
     console.log(itin);
-    console.log(comments);
 
     res.render('itinerary', {
       ...itin,
-      ...comments
+      logged_in: req.session.logged_in
     });
   } catch (err) {
     res.status(500).json(err);
