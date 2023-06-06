@@ -12,7 +12,7 @@
 
 This application is a wonderful social site. It allows users to interact with eachother and lookup different itineraries to inspire their next adventure. This is also a great place to store and keep their itineraries organized. This application is user friendly and perfect for anyone! 
 
-! [project-2-screenshot](./public/img/project-2-screenshot.png)
+![project-2-screenshot](./public/img/project-2-screenshot.png)
 https://github.com/FiggersRM/Roam-Ready
 
 ## Credits
