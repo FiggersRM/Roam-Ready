@@ -19,6 +19,14 @@ Itinerary.init(
             type: DataTypes.STRING,
             allowNull: false
         },
+        startDate: {
+            type: DataTypes.DATEONLY,
+            allowNull: false
+        },
+        endDate: {
+            type: DataTypes.DATEONLY,
+            allowNull: false
+        },
         date_created: {
             type: DataTypes.DATE,
             allowNull: false,

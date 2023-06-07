@@ -2,8 +2,14 @@
   <div class="column is-8 has-text-centered my-2" id="headerDiv">
     <p class="is-size-2 has-text-black">{{title}}</p>
   </div>
+  <div class="column is-half has-text-centered">
+    <span class="is-size-4 has-text-black">Start Date: {{format_date startDate}}</span>
+  </div>
+  <div class="column is-half has-text-centered">
+    <span class="is-size-4 has-text-black">End Date: {{format_date endDate}}</span>
+  </div>
   <div class="column is-full has-text-centered pb-4 mb-5" id="descDiv">
-    <p class="is-size-4 has-text-black">{{description}}</p>
+    <p class="is-size-4 has-text-black" style="white-space: pre-line">{{description}}</p>
   </div>
   {{#each comments as |comment|}}
   {{> comment-details}}
