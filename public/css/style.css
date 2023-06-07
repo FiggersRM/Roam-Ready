@@ -200,3 +200,11 @@ a:hover {
     margin-bottom: 20px;
 }
 
+#startDate {
+    width: 20%;
+}
+
+#endDate {
+    width: 20%;
+}
+
