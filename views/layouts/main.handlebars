@@ -12,19 +12,19 @@
   </head>
   <body>
     <header>
-      <div class="column is-full py-5">
-        <h1 class="is-size-1 has-text-centered has-text-black">Roam Ready</h1>
+      <div class="column is-full" id="hdrDiv">
+        <h1 class="is-size-1 has-text-centered has-text-black"><img src="/assets/images/Roam_Ready-transformed.png" id="hdrImg"></h1>
       </div>
-      <nav class="">
-        <a href="/" class="mx-4 has-text-black">Home</a>
+      <nav class="navbar py-4" id="is-nav">
+        <a href="/" class="mx-4 has-text-black is-underlined is-hoverable navbarItem">Home</a>
         {{!-- <a href="<!--Add Itineraries link-->" class="mx-4 has-text-black"
           >Public Itineraries</a --}}
         
         {{#if logged_in}}
-        <a href="/dashboard" class="has-text-black">My Dashboard</a>
-        <a id="logout" class="has-text-black">Logout</a>
+        <a href="/dashboard" class="has-text-black mx-4 is-underlined">My Dashboard</a>
+        <a id="logout" class="has-text-black mx-4 is-underlined">Logout</a>
         {{else}}
-        <a href="/login" class=" mx-4 has-text-black">Login</a>
+        <a href="/login" class=" mx-4 has-text-black is-underlined">Login</a>
         {{/if}}
       </nav>
     </header>

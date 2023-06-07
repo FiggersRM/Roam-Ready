@@ -2,7 +2,7 @@ const newFormHandler = async (event) => {
     event.preventDefault();
 
     const title = document.querySelector("#itinerary-name").value.trim()
-    const description = document.querySelector("#itinerary-name").value.trim()
+    const description = document.querySelector("#itinerary-desc").value.trim()
 
     if (title && description) {
         const response = await fetch(`/api/itineraries`, {
