@@ -1,14 +1,14 @@
-<div class="columns is-flex is-flex-wrap-wrap">
-  <div class="column is-full has-text-centered">
+<div class="columns is-flex is-flex-wrap-wrap mt-3 is-justify-content-center column is-8 mx-auto" id="itinDiv">
+  <div class="column is-8 has-text-centered my-2" id="headerDiv">
     <p class="is-size-2 has-text-black">{{title}}</p>
   </div>
-  <div class="column is-full has-text-centered">
+  <div class="column is-full has-text-centered pb-4 mb-5" id="descDiv">
     <p class="is-size-4 has-text-black">{{description}}</p>
   </div>
   {{#each comments as |comment|}}
   {{> comment-details}}
   {{/each}}
-  <div id="commentDiv" class="column is-full has-text-centered is-justify-content-center">
+  <div id="addCommentDiv" class="column is-full has-text-centered is-justify-content-center">
     <button id="commentBtn" class="button is-info is-light">Add Comment</button>
   </div>
 </div>

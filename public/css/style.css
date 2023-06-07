@@ -61,64 +61,88 @@ body {
 }
 
 .login {
-    margin-top: 50px;
+    /* margin-top: 50px; */
     font-size: large;
     color: black;
+    border: 3px solid darkgray;
+    border-radius: 5px;
 }
 
 .signup {
-    margin-top: 50px;
+    /* margin-top: 50px;
     margin-left: 100px;
-    padding: 50px;
+    padding: 50px; */
     color: black;
+    border: 3px solid darkgray;
+    border-radius: 5px;
 }
 
 .email {
-    padding: 10px;
+    /* padding: 10px; */
     font-size: larger;
     color: black;
 }
 
+#email-login {
+    width: 50%;
+}
+
+#password-login {
+    width: 50%;
+}
+
+#username-signup {
+    width: 50%;
+}
+
+#email-signup {
+    width: 50%;
+}
+
+#password-signup {
+    width: 50%;
+}
+
 .password {
-    padding: 10px;
+    /* padding: 10px; */
     font-size: larger;
     color: black;
 }
 
 .loginbtn {
-    padding: 10px;
+    /* padding: 10px; */
 }
 
 .username {
-    padding: 10px;
+    /* padding: 10px; */
     font-size: larger;
     color: black;
 }
 
 .email-sign {
-    padding: 10px;
+    /* padding: 10px; */
     font-size: larger;
     color: black;
 }
 
 .password-signup {
-    padding: 10px;
+    /* padding: 10px; */
     font-size: larger;
     color: black;
 }
 
 .signup-btn {
-    padding: 10px;
+    /* padding: 10px; */
     width: 500px;
 }
 
 .signup {
-    margin-left: 100px;
+    /* margin-left: 100px; */
     width: 50px;
 }
 
 .login {
-    margin-left: 100px;
+    /* margin-left: 100px; */
     width: 50px;
 }
 
@@ -155,3 +179,24 @@ a:hover {
     margin-bottom: -100px;
     margin-top: -100px;
 }
+
+#itinDiv {
+    background-color: #6FF0F5;
+    border: 3px solid darkgray;
+    border-radius: 15px;
+}
+
+#headerDiv {
+    border-bottom: 3px solid darkgray;
+}
+
+#descDiv {
+    border-bottom: 3px solid darkgray;
+}
+
+#commentDiv {
+    border: 3px solid darkgray;
+    border-radius: 5px;
+    margin-bottom: 20px;
+}
+
