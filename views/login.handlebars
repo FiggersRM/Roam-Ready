@@ -1,45 +1,43 @@
-<div class="columns">
-  <div class="column is-half login">
+<div class="columns is-flex is-flex-wrap-wrap mt-5 is-justify-content-space-evenly">
+  <div class="column is-5 login has-text-centered has-background-grey-lighter has-border-primary">
     <h1 class="login-head">Login</h1>
-
-    <form class="form login-form">
-      <div class="form-group email">
-        <label for="email-login">email:</label>
-        <input class="form-input" type="text" id="email-login" />
+    <form class="login-form">
+      <div class="email my-2">
+        <span>Email:</span>
+        <input class="input is-primary" type="text" id="email-login" placeholder="Email"/>
       </div>
-      <div class="form-group password">
-        <label for="password-login">password:</label>
-        <input class="form-input" type="password" id="password-login" />
+      <div class="password">
+        <span>Password:</span>
+        <input class="input is-primary" type="password" id="password-login" placeholder="Password"/>
       </div>
       <div class="form-group loginbtn">
         <button
-          class="btn btn-primary button is-rounded is-black"
-          type="submit"
-        >login</button>
+          class="btn btn-primary button is-rounded is-black mt-3"
+          type="submit" id="loginBtn"
+        >Login</button>
       </div>
     </form>
   </div>
-  <div class="column is-half signup">
+  <div class="column is-5 signup has-text-centered has-background-grey-lighter signup">
     <h1 class="signup-head">Signup</h1>
-
-    <form class="form signup-form">
-      <div class="form-group username">
-        <label for="username-signup">username:</label>
-        <input class="form-input" type="text" id="username-signup" />
+    <form class="signup-form">
+      <div class="username my-2">
+        <span>Username:</span>
+        <input class="input is-primary" type="text" id="username-signup" placeholder="Email"/>
       </div>
-      <div class="form-group email-sign">
-        <label for="email-signup">email:</label>
-        <input class="form-input" type="text" id="email-signup" />
+      <div class="mb-2 email-sign">
+        <span>Email:</span>
+        <input class="input is-primary" type="text" id="email-signup" placeholder="Email"/>
       </div>
-      <div class="form-group password-signup">
-        <label for="password-signup">password:</label>
-        <input class="form-input" type="password" id="password-signup" />
+      <div class="form-group password-sign">
+        <span>Password:</span>
+        <input class="input is-primary" type="password" id="password-signup" placeholder="Password"/>
       </div>
-      <div class="form-group signup-btn">
+      <div class="form-group signup-btn mx-auto mt-2">
         <button
           class="btn btn-primary button is-rounded is-black"
-          type="submit"
-        >signup</button>
+          type="submit" id="signupBtn"
+        >Signup</button>
       </div>
     </form>
   </div>

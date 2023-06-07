@@ -1,7 +1,7 @@
 const loginHandler = async (event) => {
   event.preventDefault();
 
-  const email = document
+  let email = document
     .querySelector("#email-login")
     .value.trim();
   const password = document
@@ -47,5 +47,7 @@ const signupHandler = async (event) => {
     }
 }
 
-document.querySelector(".login-form").addEventListener('submit', loginHandler);
-document.querySelector(".signup-form").addEventListener('submit', signupHandler);
+loginBtn = document.getElementById("loginBtn");
+loginBtn.addEventListener('click', loginHandler);
+signupBtn = document.getElementById("signupBtn");
+signupBtn.addEventListener('click', signupHandler);

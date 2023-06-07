@@ -1,11 +1,11 @@
-commentDiv = document.getElementById('commentDiv');
+commentDiv = document.getElementById('addCommentDiv');
 commentBtn = document.getElementById('commentBtn');
 const textareaDiv = document.createElement('div');
 textareaDiv.setAttribute('class', 'column is-full has-text-centered');
 
 const textArea = document.createElement('textarea');
-textArea.rows = 4;
-textArea.cols = 100;
+textArea.setAttribute('class', 'textarea is-primary');
+textArea.placeholder = "Your Comment";
 const submitBtn = document.createElement('input');
 submitBtn.type = 'submit';
 submitBtn.value = 'Submit Comment';
