@@ -1,6 +1,6 @@
 body {
     margin: 0% 2%;
-    background: #00bfff;
+    background: #5dd3fa;
     color: black;
     height: 100vh;
   }
@@ -131,4 +131,27 @@ body {
     font-size: xx-large;
     text-decoration: underline;
 }
-  
+
+#is-nav {
+    background-color: #6FF0F5;
+    border-top: 3px solid darkgray;
+    border-bottom: 3px solid darkgray;
+}
+
+.itinHeader {
+    font-size: 3rem;
+}
+
+a:hover {
+    color:white;
+}
+
+#hdrImg {
+    height: 400px;
+    width: 400px;
+}
+
+#hdrDiv {
+    margin-bottom: -100px;
+    margin-top: -100px;
+}

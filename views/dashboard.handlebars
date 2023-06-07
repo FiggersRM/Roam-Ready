@@ -1,46 +1,44 @@
  <div class="row">
         <div class="col-auto">
-          <h1 class="welcome">Welcome to your Dashboard!</h1>
+          <h1 class="welcome has-text-centered my-3">Welcome to your Dashboard</h1>
         </div>
       </div>
     <div class="columns">
       <div class="row mt-4 itinForm column is-half">
-        <div class="col-md-6" >
-          <h3 class="createForm">Create a New Itinerary:</h3>
+        <div class="" >
+          <h3 class="createForm has-text-centered is-size-3">Create a New Itinerary:</h3>
       
-          <form class="form new-itinerary-form">
-            <div class="form-group name">
-              <label for="itinerary-name">Itinerary Name:</label>
-              <input class="form-input" type="text" id="itinerary-name" name="itinerary-name" />
+          
+            <div class="form-group name has-text-centered mx-auto">
+              <p class="is-size-4">Itinerary Name:</p>
+              <input class="input is-primary" type="text" id="itinerary-name" name="itinerary-name" placeholder="Itinerary Name"/>
             </div>
-            <div class="form-group desc">
-              <label for="itinerary-desc">description:</label>
-              <textarea class="form-input" id="itinerary-desc" name="itinerary-desc"></textarea>
+            <div class="mx-auto has-text-centered">
+              <p class="is-size-4">Description:</p>
+              <textarea class="textarea is-primary is-medium" id="itinerary-desc" rows="10" cols="50" placeholder="Describe your trip"></textarea>
             </div>
-            <div class="createItin-btn" class="form-group">
+            <div class="createItin-btn form-group has-text-centered mt-3">
               <button type="submit" class="button is-rounded is-dark btn btn-primary">Create!</button>
             </div>
-          </form>
         </div>
       </div>
 
-      <div class="column is-half itineraries">
+      <div class="column is-half itineraries has-text-centered mt-4">
         {{#if itineraries.length}}
-        <div class="col-md-6 itinerary-list">
-          <h3 class="myItin">My Itineraries:</h3>
+        <div class="itinerary-list">
+          <h3 class="myItin is-size-3 has-text-black">My Itineraries:</h3>
       
           {{#each itineraries as |itinerary|}}
-          <div class="row mb-2">
-            <div class="col-md-8">
-              <h4><a href="/itinerary/{{itinerary.id}}">{{itinerary.title}}</a></h4>
-            </div>
-          </div>
+          <div class="card column m-2 is-6 mx-auto">
+            <header class="card-header">
+              <a class="card-header-title is-justify-content-center" href="/itinerary/{{itinerary.id}}">
+                {{itinerary.title}}
+              </a>
+            </header>
+        </div>
           {{/each}}
         </div>
         {{/if}}
-        <div class="col-md-4">
-            <button class=" button is-rounded is-info is focused btn create-btn">Create Itinerary</button>
-        </div>
     
         </div>
       </div>

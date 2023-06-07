@@ -20,6 +20,7 @@ router.get('/', async (req, res) => {
     res.render('homepage', {
       itineraries,
       logged_in: req.session.logged_in,
+      name: req.session.username,
     });
   } catch (err) {
     res.status(500).json(err);
@@ -43,7 +44,8 @@ router.get('/dashboard', withAuth, async (req, res) => {
 
         res.render('dashboard', {
             itineraries,
-            logged_in: req.session.logged_in
+            logged_in: req.session.logged_in,
+            username: req.session.username,
         });
     } catch (err) {
       console.log("error", err)
@@ -75,7 +77,8 @@ router.get('/itinerary/:id', withAuth, async (req, res) => {
 
     res.render('itinerary', {
       ...itin,
-      logged_in: req.session.logged_in
+      logged_in: req.session.logged_in,
+      username: req.session.username,
     });
   } catch (err) {
     res.status(500).json(err);
